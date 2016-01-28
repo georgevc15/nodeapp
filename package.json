@@ -1,0 +1,19 @@
+{
+  "name": "pubsub",
+  "version": "1.0.0",
+  "description": "node.js soup to bits pub sub server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "solcreation",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/georgevc15/nodeapp"
+  },
+  "keywords": [
+    "node",
+    "server"
+  ]
+}
