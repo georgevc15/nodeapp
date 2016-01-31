@@ -1,0 +1,14 @@
+minutul 41.33
+
+
+
+$ curl --data "" http://localhost:8000
+
+curl --data "param1=value1&param2=value2" http://hostname/resource
+
+
+curl -X POST http://localhost:8000 -H "content-type: application/json" -d '[{"badge_id":"foo bar badge"}]'
+
+
+
+git https://github.com/codeschool/nodejs-soup-to-bits-pub-sub-server
