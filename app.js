@@ -1,18 +1,34 @@
 'use strict'
 
 var express = require('express');
+var app = express();
 var badges = require('./controllers/badges');
 
-var app = express();
+var port = process.env.PORT || 8000;
 
-app.use(express.json());
-
-app.post('/', badges.save, badges.send, function(req,res){
-	res.send('\sunt in app.js care interediaza restul aplicatiei\n\n');
+/**
+ *  Have our server listen on port 8000
+ */
+app.listen(port, function(){
+  console.log('Server running on port %d', port);
 });
 
 
-app.listen(8000, console.log);
+app.use(express.json());
+
+
+app.post('/', badges.save, badges.send);
+
+app.get('/badges', badges.get);
+
+/*
+app.post('/', badges.save, badges.send, function(req,res){
+	res.send('\sunt in app.js care intermediaza restul aplicatiei\n\n');
+});
+*/
+
+
+//app.listen(8000, console.log);
 
 
 /*

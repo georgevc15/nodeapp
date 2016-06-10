@@ -1,0 +1,1 @@
+shows a list of badges into the browser. The list is provideb by a Pub/Sub Server https://github.com/georgevc15/nodeappwebserver

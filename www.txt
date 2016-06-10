@@ -1,14 +1,36 @@
-minutul 41.33
+minutul 1.08
 
+-- initializez o aplicatie cu npm init (se genereaza package.json)
+-- instalez ce imi trebuie npm install axon express socket.io request --save / actualizez npm update --save
+-- pornesc aplicatia cu node app
+-- in alta fereastra rulez comenziile de mai jos
 
+--primul commit
+
+v1------>
 
 $ curl --data "" http://localhost:8000
-
 curl --data "param1=value1&param2=value2" http://hostname/resource
 
 
+v2------>
+
 curl -X POST http://localhost:8000 -H "content-type: application/json" -d '[{"badge_id":"foo bar badge"}]'
 
+curl http://localhost:8000/badges
+
+-H este de la Header
+
+--end primul comMit
 
 
+- REDIS 
+
+Listeaza badges
+- LRANGE badges 0 -1
+
+Pubserver:
 git https://github.com/codeschool/nodejs-soup-to-bits-pub-sub-server
+
+Webserver
+git  https://github.com/codeschool/nodejs-soup-to-bits-web-server
